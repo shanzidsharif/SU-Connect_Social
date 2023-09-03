@@ -56,7 +56,7 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="true">
                         <li>
-                            <a href="javascript: void(0);" class= "" key="t-vertical">Select Department Lecturer</a>
+                            <a href="{{ route('show.lecturer') }}" class= "" key="t-vertical">Select Department Lecturer</a>
                         </li>
                         <li>
                             <a href="javascript: void(0);" class= "" key="t-vertical">Manage Follow Lecturer List</a>                        </li>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Lecturer;
 use App\Models\Student;
 use Illuminate\Http\Request;
 use Session;
@@ -9,7 +10,7 @@ use function Symfony\Component\Mime\Header\all;
 
 class StudentController extends Controller
 {
-    private $student;
+    private $student, $lecturers;
 
      public function register(Request $request)
      {
@@ -69,5 +70,13 @@ class StudentController extends Controller
 //         return $request->all();
          $this->student =Student::profileUpdate($request, $id);
          return back()->with('message', 'Successfully Updated Profile');
+     }
+     public function showLecturer()
+     {
+         $this->lecturers = Lecturer::where('status', 1)->get();
+//         return $this->lecturers;
+         return view('student.dashboard.lecturer.show-lecturer',[
+             'lecturers' => $this->lecturers,
+         ]);
      }
 }

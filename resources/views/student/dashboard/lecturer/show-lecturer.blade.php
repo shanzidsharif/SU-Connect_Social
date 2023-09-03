@@ -1,4 +1,4 @@
-@extends('admin.master')
+@extends('student.master')
 
 @section('title')
    Manage Lecturer
@@ -45,7 +45,7 @@
                 </div>
                 <section>
                     <div class="col-md-12 mt-3">
-                        <div class="card card-body table-responsive">
+                        <div class="card card-body">
                             <table class="table table-hover table-bordered">
                                 <thead>
                                 <tr>
@@ -56,7 +56,6 @@
                                     <th>Image</th>
                                     <th>Mobile No</th>
                                     <th>Email Address</th>
-                                    <th>Status</th>
                                     <th>Action</th>
                                 </tr>
                                 </thead>
@@ -70,21 +69,12 @@
                                     <td>{{ $lecturer->image }}</td>
                                     <td>{{ $lecturer->mobile }}</td>
                                     <td>{{ $lecturer->email }}</td>
-                                    <td>
-                                        @if($lecturer->status == 0)
-                                            <a href="" class="btn btn-primary btn-sm">Accept</a>
-                                        @else
-                                            <a href="" class="btn btn-warning btn-sm">Accepted</a>
-                                        @endif
-                                    </td>
-                                    <td class="btn-group-sm">
-                                        <a href="" class="btn btn-info btn-sm">Detail</a>
-                                        <a href="" class="btn btn-success my-1">Edit</a>
-                                        <a href="" class="btn btn-danger btn-sm">Delete</a>
+                                    <td class="btn-group">
+                                        <a href="" class="btn btn-success">Follow</a>
+                                        <a href="" class="btn btn-danger mx-1">Unfollow</a>
                                     </td>
                                 </tr>
                                 @endforeach
-
                                 </tbody>
                             </table>
                         </div>

@@ -20,6 +20,7 @@ Route::post('/student-login',[StudentController::class, 'login'])->name('student
 Route::get('/student-dashboard',[StudentController::class, 'dashboard']);
 Route::get('/student-profile',[StudentController::class, 'profile'])->name('student.profile');
 Route::post('/student-profile-update/{id}',[StudentController::class, 'profileUpdate'])->name('student.profile.update');
+Route::get('/student-dashboard/show.lecturer',[StudentController::class, 'showLecturer'])->name('show.lecturer');
 
 
 //Lecturer Controller
