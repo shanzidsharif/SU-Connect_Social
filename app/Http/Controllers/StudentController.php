@@ -14,9 +14,9 @@ class StudentController extends Controller
      public function register(Request $request)
      {
          $this->student = Student::addStudent($request);
-         return back()->with('message', 'Wait Until Accept Your Account');
          Session::put('student_id', $this->student->id);
          Session::put('student_suid',$this->student->suid);
+         return back()->with('message', 'Wait Until Accept Your Account');
      }
 
 
@@ -37,8 +37,6 @@ class StudentController extends Controller
                  }
                 else
                 {
-                    Session::put('student_id', $this->student->id);
-                    Session::put('student_suid',$this->student->suid);
                     return redirect('/')->with('message', 'Your Registration Process is not Complete Yet!!');
                 }
              }
