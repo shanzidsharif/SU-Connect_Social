@@ -26,6 +26,8 @@ Route::post('/student-profile-update/{id}',[StudentController::class, 'profileUp
 Route::post('/lecturer-registration',[LecturerController::class, 'register'])->name('lecturer.registration');
 Route::post('/lecturer-login',[LecturerController::class, 'login'])->name('lecturer.login');
 Route::get('/lecturer-dashboard',[LecturerController::class, 'dashboard'])->name('lecturer.dashboard');
+Route::get('/lecturer-profile',[LecturerController::class, 'profile'])->name('lecturer.profile');
+Route::post('/lecturer-profile-update/{id}',[LecturerController::class, 'profileUpdate'])->name('lecturer.profile.update');
 
 
 

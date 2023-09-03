@@ -37,6 +37,8 @@ class LecturerController extends Controller
             {
                 if( $this->lecturer->status == 1)
                 {
+                    Session::put('lecturer_id',  $this->lecturer->id);
+                    Session::put('lecturer_suid', $this->lecturer->suid);
                     return redirect('/lecturer-dashboard');
                 }
                 else
@@ -57,5 +59,20 @@ class LecturerController extends Controller
     public function dashboard()
     {
         return view('lecturer.dashboard.dashboard');
+    }
+
+    public function profile()
+    {
+        $this->lecturer = Session::get('lecturer_id');
+//         return Lecturer::where('id', $this->lecturer)->first();
+        return view('lecturer.dashboard.profile.see-profile',[
+            'profile' => Lecturer::where('id', $this->lecturer)->first(),
+        ]);
+    }
+    public function profileUpdate(Request $request, $id)
+    {
+//         return $request->all();
+        $this->lecturer =Lecturer::profileUpdate($request, $id);
+        return back()->with('message', 'Successfully Updated Profile');
     }
 }

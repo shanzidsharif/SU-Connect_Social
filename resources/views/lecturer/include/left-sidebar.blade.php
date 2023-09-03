@@ -26,7 +26,7 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="true">
                         <li>
-                            <a href="#" class="" key="t-vertical">See Profile</a>
+                            <a href="{{ route('lecturer.profile') }}" class="" key="t-vertical">See Profile</a>
                         </li>
                         <li>
                             <a href="#" class="" key="t-vertical">Edit Profile</a>
