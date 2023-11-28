@@ -58,7 +58,9 @@
                                     <td>{{ $student->name }}</td>
                                     <td>{{ $student->department }}</td>
                                     <td>{{ $student->suid }}</td>
-                                    <td>{{ $student->image }}</td>
+                                    <td>
+                                        <img src="{{ asset($student->image) }}" alt="" height="100px" width="100px" border="1px" />
+                                    </td>
                                     <td>{{ $student->mobile }}</td>
                                     <td>{{ $student->email }}</td>
                                     <td>

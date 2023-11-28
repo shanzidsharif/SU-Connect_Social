@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Models\Lecturer;
 use App\Models\Student;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class DashboardController extends Controller
 {
-    private $lecturers, $students, $arrangeStudents, $arrangeLecturers, $status;
+    private $lecturers, $students, $arrangeStudents, $arrangeLecturers, $status, $admin_id, $admin;
     public function index()
     {
         return view('admin.dashboard.dashboard');
@@ -48,6 +50,21 @@ class DashboardController extends Controller
     public function categoryStudent(Request $request)
     {
         return $this->students;
+    }
+
+    public function status($id)
+    {
+        $this->status = Lecturer::status($id);
+        return redirect('/dashboard/manage-lecturer');
+    }
+    public function showProfile()
+    {
+        $this->admin_id = Auth::user()->id;
+        $this->admin = User::find($this->admin_id);
+//        return $this->admin;
+        return view('admin.profile.profile',[
+            'user' => $this->admin,
+        ]);
     }
 
 }

@@ -79,4 +79,5 @@ class StudentController extends Controller
              'lecturers' => $this->lecturers,
          ]);
      }
+
 }

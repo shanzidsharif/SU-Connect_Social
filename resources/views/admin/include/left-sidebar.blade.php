@@ -23,7 +23,7 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="true">
                         <li>
-                            <a href="#" class="" key="t-vertical">See Profile</a>
+                            <a href="{{ route('admin.profile') }}" class="" key="t-vertical">See Profile</a>
                         </li>
                         <li>
                             <a href="{{ route('adminProfile-edit') }}" class="" key="t-vertical">Edit Profile</a>
@@ -69,7 +69,7 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="true">
                         <li>
-                            <a href="javascript: void(0);" class="" key="t-vertical">Add Announcement</a>
+                            <a href="" class="" key="t-vertical">Add Announcement</a>
                         </li>
                         <li>
                             <a href="javascript: void(0);" class="" key="t-vertical">Manage Announcement</a>

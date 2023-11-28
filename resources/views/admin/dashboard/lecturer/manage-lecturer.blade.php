@@ -72,15 +72,15 @@
                                     <td>{{ $lecturer->email }}</td>
                                     <td>
                                         @if($lecturer->status == 0)
-                                            <a href="" class="btn btn-primary btn-sm">Accept</a>
+                                            <a href="{{ route('lecturer.status',['id' => $lecturer->id]) }}" class="btn btn-primary btn-sm" >Accept</a>
                                         @else
-                                            <a href="" class="btn btn-warning btn-sm">Accepted</a>
+                                            <a href="{{ route('lecturer.status',['id' => $lecturer->id]) }}" class="btn btn-warning btn-sm" onclick="return confirm('Do You Really Want to change!')">Accepted</a>
                                         @endif
                                     </td>
                                     <td class="btn-group-sm">
-                                        <a href="" class="btn btn-info btn-sm">Detail</a>
+                                        <a href=""  class="btn btn-info btn-sm">Detail</a>
                                         <a href="" class="btn btn-success my-1">Edit</a>
-                                        <a href="" class="btn btn-danger btn-sm">Delete</a>
+                                        <a href="" class="btn btn-danger btn-sm" onclick="return confirm('Do You Really Want to Delete!')">Delete</a>
                                     </td>
                                 </tr>
                                 @endforeach

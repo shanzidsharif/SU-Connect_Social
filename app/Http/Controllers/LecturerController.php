@@ -58,6 +58,8 @@ class LecturerController extends Controller
     }
     public function dashboard()
     {
+        Session::get('lecturer_id');
+        Session::get('lecturer_suid');
         return view('lecturer.dashboard.dashboard');
     }
 

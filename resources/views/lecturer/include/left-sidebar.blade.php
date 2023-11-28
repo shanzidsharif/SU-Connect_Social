@@ -9,7 +9,7 @@
                 <li class="menu-title" key="t-menu">Menu</li>
 
                 <li>
-                    <a href="{{ route('dashboard') }}" class="waves-effect">
+                    <a href="{{ route('lecturer.dashboard') }}" class="waves-effect">
                         <i class="bx bx-home-circle"></i>
                         <span key="t-dashboards"> Lecturer Dashboards</span>
                     </a>
@@ -55,14 +55,14 @@
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="bx bx-layout"></i>
-                        <span key="t-layouts">Upload File</span>
+                        <span key="t-layouts">Create Post</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="true">
                         <li>
-                            <a href="javascript: void(0);" class="" key="t-vertical">Upload Files</a>
+                            <a href="{{ route('create.file') }}" class="" key="t-vertical">Upload Files</a>
                         </li>
                         <li>
-                            <a href="javascript: void(0);" class="" key="t-vertical">Manage Files</a>
+                            <a href="{{ route('show.post') }}" class="" key="t-vertical">Manage Posts</a>
                         </li>
                     </ul>
                 </li>
@@ -75,10 +75,10 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="true">
                         <li>
-                            <a href="javascript: void(0);" class="" key="t-vertical">Add Announcement</a>
+                            <a href="{{ route('announcement.form') }}" class="" key="t-vertical">Add Announcement</a>
                         </li>
                         <li>
-                            <a href="javascript: void(0);" class="" key="t-vertical">Manage Announcement</a>
+                            <a href="{{ route('manage.announcement') }}" class="" key="t-vertical">Manage Announcement</a>
                         </li>
                     </ul>
                 </li>

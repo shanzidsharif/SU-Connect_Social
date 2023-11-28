@@ -12,7 +12,7 @@
                     <div class="col-md-12">
                         <ul class="nav nav-pills">
                             <li class="text-center"><a href="" class="nav-link active" data-bs-target="#student" data-bs-toggle="pill">Student Registration</a></li>
-                            <li ><a href="" class="nav-link" data-bs-target="#lecturer" data-bs-toggle="pill">Lecturer Registration</a></li>
+                            <li class="text-center"> <a href="" class="nav-link" data-bs-target="#lecturer" data-bs-toggle="pill">Lecturer Registration</a></li>
                         </ul>
                         <h4 class="text-center text-danger">{{ session('message') }}</h4>
                         <div class="col-lg-12">
@@ -107,8 +107,8 @@
                                                             </div>
 
                                                             <div class="col-md-12 ">
-                                                                <div class="single-form button mt-3">
-                                                                    <button class="btn btn-success" type="submit" >Register</button>
+                                                                <div class="single-form button mt-3 text-center">
+                                                                    <button class="btn btn-primary form-control" type="submit" >Register</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -149,8 +149,8 @@
                                                             </div>
 
                                                             <div class="col-md-12 ">
-                                                                <div class="single-form button mt-3">
-                                                                    <button class="btn btn-success" type="submit" >Login</button>
+                                                                <div class="single-form button mt-3 text-center">
+                                                                    <button class="btn btn-primary form-control" type="submit" >Login</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -233,8 +233,8 @@
                                                             </div>
 
                                                             <div class="col-md-12 ">
-                                                                <div class="single-form button mt-3">
-                                                                    <button class="btn btn-success" type="submit" >Register</button>
+                                                                <div class="single-form button mt-3 text-center">
+                                                                    <button class="btn btn-primary form-control" type="submit" >Register</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -276,8 +276,8 @@
                                                             </div>
 
                                                             <div class="col-md-12 ">
-                                                                <div class="single-form button mt-3">
-                                                                    <button class="btn btn-success" type="submit" >Login</button>
+                                                                <div class="single-form button mt-3 text-center">
+                                                                    <button class="btn btn-primary form-control" type="submit" >Login</button>
                                                                 </div>
                                                             </div>
                                                         </div>

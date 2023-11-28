@@ -9,7 +9,7 @@
                 <li class="menu-title" key="t-menu">Menu</li>
 
                 <li>
-                    <a href="{{ route('dashboard') }}" class="waves-effect">
+                    <a href="{{ route('student.dashboard') }}" class="waves-effect">
                         <i class="bx bx-home-circle"></i>
                         <span key="t-dashboards">Student Dashboards</span>
                     </a>
@@ -71,10 +71,20 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="true">
                         <li>
-                            <a href="javascript: void(0);" class="" key="t-vertical">Submit Complain</a>
+                            <a href="{{ route('student.complain.form') }}" class="" key="t-vertical">Submit Complain</a>
                         </li>
                         <li>
-                            <a href="javascript: void(0);" class="" key="t-vertical">Complain List</a>
+                            <a href="{{ route('student.manage.complain') }}" class="" key="t-vertical">Complain List</a>
+                        </li>
+                    </ul>
+                </li><li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="bx bx-layout"></i>
+                        <span key="t-layouts">Favourite</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="true">
+                        <li>
+                            <a href="javascript: void(0);" class="" key="t-vertical">Pin Post</a>
                         </li>
                     </ul>
                 </li>

@@ -64,7 +64,7 @@
 
                                 <div class="mb-3">
                                     <label for="username"  class="form-label">Username</label>
-                                    <input type="text" name="email" class="form-control" id="username" placeholder="Enter username">
+                                    <input type="email" name="email" class="form-control" id="username" placeholder="Enter username">
                                 </div>
 
                                 <div class="mb-3">
@@ -120,7 +120,7 @@
 
                     <div>
                         <p>Don't have an account ? <a href="auth-register.html" class="fw-medium text-primary"> Signup now </a> </p>
-                        <p>© <script>document.write(new Date().getFullYear())</script> Skote. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
+                        <p>© <script>document.write(new Date().getFullYear())</script> Developed & Designed by <i class="mdi mdi-heart text-danger"></i>Sharif</p>
                     </div>
                 </div>
 

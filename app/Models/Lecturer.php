@@ -60,4 +60,18 @@ class Lecturer extends Model
         self::$lecturer->save();
         return self::$lecturer;
     }
+    public static function status($id)
+    {
+        self::$lecturer = Lecturer::find($id);
+        if(self::$lecturer->status == 0)
+        {
+            self::$lecturer->status = 1;
+        }
+        else
+        {
+            self::$lecturer->status = 0;
+        }
+        self::$lecturer->save();
+        return self::$lecturer;
+    }
 }

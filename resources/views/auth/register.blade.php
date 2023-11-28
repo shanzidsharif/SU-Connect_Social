@@ -54,7 +54,6 @@
                         <div class="p-2">
                             <form class="needs-validation" novalidate action="{{ route('register') }}" method="POST">
                                 @csrf
-
                                 <div class="mb-3">
                                     <label for="useremail" class="form-label">Email</label>
                                     <input type="email" class="form-control" name="email" id="useremail" placeholder="Enter email" required>
